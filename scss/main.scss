@@ -256,7 +256,7 @@ button {
         width: 20px;
         height: 160%;
         content: '';
-        left: -40px;
+        left: -45px;
         bottom: -17px;
         filter: blur(3px);
         transform: rotateZ(33deg);
@@ -265,7 +265,7 @@ button {
     }
 
     &:hover::before {
-        left: 110%;
+        left: 120%;
         transition: .2s;
     }
 }
@@ -299,15 +299,18 @@ button {
                 display: none;
             }
         }
+
+        &--circly {
+            display: none;
+        }
     }
 
     &__link {
-        display: flex;
-        justify-content: center;
         padding: 15px;
 
         ul {
             display: flex;
+            justify-content: center;
 
             li {
                 margin-right: 60px;
@@ -339,6 +342,73 @@ button {
                         width: 100%;
                         transition: .4s;
                     }
+                }
+            }
+        }
+
+        &--mobile {
+            display: none;
+
+            a {
+                font-size: 16px;
+                line-height: 120%;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    &__menu {
+        width: 100%;
+        max-width: 100%;
+        right: 0;
+        top: 127px;
+        display: none;
+        z-index: 100;
+        transition: .4s;
+        position: absolute;
+
+        &--active {
+            display: block;
+            transition: .4s;
+        }
+
+        &--wrapper {
+            padding: 60px 0 48px 20px;
+
+            ul li {
+                margin-bottom: 25px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                a {
+                    font-size: 20px;
+                    line-height: 120%;
+                }
+            }
+
+            &-icon {
+                display: flex;
+                margin: 30px 0 25px;
+
+                a {
+                    margin-right: 13px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+
+            &_phone {
+                display: flex;
+                align-items: center;
+
+                a {
+                    font-size: 16px;
+                    line-height: 120%;
+                    margin-left: 5px;
                 }
             }
         }
@@ -405,6 +475,38 @@ button {
             }
         }
     }
+}
+
+.burger {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.burger1,
+.burger2,
+.burger3 {
+    width: 30px;
+    height: 4px;
+    background-color: #ffffff;
+    margin: 0 0 6px 0;
+    border-radius: 4px;
+    transition: 0.4s;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.change .burger1 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.change .burger2 {
+    opacity: 0;
+}
+
+.change .burger3 {
+    transform: rotate(45deg) translate(-8px, -8px);
 }
 
 // nav
