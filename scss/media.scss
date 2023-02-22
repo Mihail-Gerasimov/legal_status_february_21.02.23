@@ -8,9 +8,46 @@
     .nav__main--click_btn {
         max-width: 320px;
     }
+
+    .header__img {
+        max-width: 596px;
+    }
+
+    .header {
+        min-height: 520px;
+    }
 }
 
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+    .header__img {
+        max-width: 550px;
+    }
+
+    .header__main h1 {
+        font-size: 37px;
+        max-width: 480px;
+    }
+
+    .header__main p {
+        font-size: 20px;
+    }
+
+    .header__main h2 {
+        font-size: 25px;
+        line-height: 120%;
+        max-width: 532px;
+        margin-bottom: 49px;
+    }
+
+    .header__main h2 {
+        font-size: 22px;
+        max-width: 466px;
+    }
+
+    .nav__main--logo {
+        max-width: 165px;
+    }
+}
 
 @media (max-width: 991px) {}
 
