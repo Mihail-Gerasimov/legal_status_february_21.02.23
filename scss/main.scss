@@ -278,6 +278,34 @@ button {
     max-width: 293px;
 }
 
+.title {
+    font-family: 'Uni Neue';
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #1A2032;
+}
+
+.input {
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    display: block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #BDBDBD;
+    padding: 20px 0 20px 20px;
+    width: 100%;
+    margin-bottom: 20px;
+
+    &:hover {
+        border: 1px solid #BDBDBD;
+    }
+}
+
 /* base */
 
 // nav
@@ -478,7 +506,7 @@ button {
 }
 
 .burger {
-    display: inline-block;
+    display: none;
     cursor: pointer;
 }
 
@@ -552,3 +580,131 @@ button {
 }
 
 // header
+
+// description
+.description {
+    padding: 42px 0;
+
+    p {
+        font-size: 25px;
+        line-height: 130%;
+        text-align: center;
+    }
+}
+
+// description
+
+// care
+.care {
+    padding: 120px 0;
+
+    &__title {
+        margin-bottom: 90px;
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &--card {
+            max-width: 470px;
+
+            img {
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-bottom: 3px;
+                font-size: 25px;
+                line-height: 130%;
+            }
+
+            span {
+                font-size: 18px;
+                line-height: 120%;
+            }
+        }
+    }
+}
+
+// care
+
+// application
+.application {
+    padding-top: 40px;
+    min-height: 610px;
+    background-image: url(../img/4-application/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    &__main {
+        display: flex;
+        align-items: flex-start;
+
+        &--form {
+            box-shadow: 0px 4px 4px rgba(0, 56, 84, 0.5);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 55px 80px;
+            max-width: 513px;
+
+            h4 {
+                font-size: 30px;
+                line-height: 120%;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 120%;
+                margin-bottom: 30px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &__argument {
+        position: absolute;
+        right: 0;
+        top: 195px;
+        z-index: 1;
+
+        div {
+            text-align: end;
+            background: #185F8D;
+            box-shadow: 0px 4px 4px rgba(0, 56, 84, 0.5);
+            border-radius: 5px 0px 0px 5px;
+            padding: 8px 135px 8px 20px;
+            width: 100%;
+            max-width: 540px;
+            margin-bottom: 25px;
+            font-size: 23px;
+            line-height: 130%;
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-left: 20px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// application

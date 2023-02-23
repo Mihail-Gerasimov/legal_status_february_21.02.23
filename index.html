@@ -116,9 +116,87 @@
                 <button class="btn bg-dark fw700 btn-short white">Оставить заявку</button>
             </div>
         </div>
-
-        <img class="header__img" src="./img/2-header/header-logo.png" alt="">
+        <picture class="header__img">
+            <source srcset="./img/2-header/header-logo.png" media="(min-width: 575px)">
+            <img src="./img/2-header/header-logo-mob.png" alt="Картинка">
+        </picture>
+        <!-- <img class="header__img" src="./img/2-header/header-logo.png" alt=""> -->
     </header>
+
+    <section class="description bg-blue">
+        <div class="container">
+            <p class="uni white fw700">Наша компания использует только законные способы списания долговых обязательств
+                граждан.
+                Специалисты грамотно проконсультируют вас по всем важным юридическим моментам и порекомендуют самый
+                оптимальный вариант списания долгов для вашей ситуции.</p>
+        </div>
+    </section>
+
+    <section class="care">
+        <div class="container">
+            <h3 class="title care__title">Мы берем на себя заботу о:</h3>
+            <div class="care__main">
+                <div class="care__main--card">
+                    <img src="./img/3-care/care-1.svg" alt="">
+                    <p class="uni fw700 dark">Вашем благополучии</p>
+                    <span class="inter fw400 dark">Не стоит больше переживать о звонках и визитах коллекторов или
+                        приставов. Как только вы
+                        начнете процедуру списания долгов, опытные юристы будут решать эти вопросы за вас</span>
+                </div>
+
+                <div class="care__main--card">
+                    <img src="./img/3-care/care-2.svg" alt="">
+                    <p class="uni fw700 dark">Сохранении имущества</p>
+                    <span class="inter fw400 dark">Специалисты нашей компании находятся на вашей стороне и помогут
+                        сохранить единственное жилье, будь то квартира, дом</span>
+                </div>
+
+                <div class="care__main--card">
+                    <img src="./img/3-care/care-3.svg" alt="">
+                    <p class="uni fw700 dark">Финансовой безопасности</p>
+                    <span class="inter fw400 dark">Наши юристы гарантируют сохранение ваших доходов, списание кредитов и
+                        долгов пройдет в четко установленные сроки без лишних затрат.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="application bg-blue">
+        <div class="container">
+            <div class="application__main">
+                <div class="application__main--form bg-white">
+                    <h4 class="black inter fw700">Оставьте заявку прямо сейчас!</h4>
+                    <p class="dark fw400 inter">Мы вам перезвоним в ближайшее время</p>
+                    <form action="">
+                        <input class="input" placeholder="Ваше имя" type="text">
+                        <input class="input" placeholder="Телефон" type="text">
+                        <button class="btn bg-dark fw700 btn-long white">Отправить</button>
+                    </form>
+                    <span class="inter fw400 dark">*Нажимая кнопку “Отправить”, я соглашаюсь с Политикой
+                        конфиденциальности</span>
+                </div>
+                <img src="./img/4-application/official.png" alt="">
+            </div>
+        </div>
+        <div class="application__argument">
+            <div class="uni fw700 white">
+                Консультация наших юристов бесплатная
+                <img src="./img/4-application/okey.svg" alt="">
+            </div>
+            <div class="uni fw700 white">
+                Подберем наилучшее решение по списанию долгов по вашей ситуации
+                <img src="./img/4-application/okey.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="description bg-blue">
+        <div class="container">
+            <p class="uni white fw700">При оформлении полного списания долгов и кредитов наши специалисты берут на себя
+                всю ответственность.
+                Все условия прозрачны и подробно прописываются в договоре. Юридически все бумаги защищены</p>
+        </div>
+    </section>
 
     <script src="./js/main.js"></script>
 </body>
