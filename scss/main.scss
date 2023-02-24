@@ -709,6 +709,7 @@ button {
 
 // application
 
+// services
 .services {
     padding: 100px 0;
 
@@ -824,4 +825,335 @@ button {
 
 .services .container {
     position: relative;
+}
+
+// services
+
+// information
+.information {
+    padding: 180px 0;
+    z-index: 0;
+    position: relative;
+
+    &__title {
+        margin-bottom: 40px;
+        color: white !important;
+    }
+
+    p {
+        font-size: 25px;
+        line-height: 130%;
+        max-width: 750px;
+        z-index: 1;
+    }
+
+    &__logo {
+        left: 310px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        z-index: -1;
+    }
+
+    &__man {
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 15px 0px 0px 15px;
+        position: absolute;
+    }
+}
+
+// information
+
+// question
+.questions {
+    padding: 100px 0;
+
+    &__title {
+        margin-bottom: 70px;
+    }
+
+    &__accordion {
+        width: 100%;
+        max-width: 1190px;
+    }
+
+    &__question {
+        overflow: hidden;
+        margin-bottom: 8px;
+    }
+
+    &__question-header {
+        width: 100%;
+        background-color: #FFFFFF;
+
+        font-family: 'Uni Neue';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 130%;
+
+        display: flex;
+        align-items: center;
+
+        padding: 15px 35px 15px 0;
+        border-bottom: 1px solid #BDBDBD;
+
+        color: #185F8D;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '\002B';
+            color: #0084C6;
+            font-weight: 700;
+            width: 23px;
+            height: 23px;
+            border-radius: 50%;
+            border: 1.5px solid #0084C6;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__question-content {
+        transition: 0.5s;
+        height: 0;
+        font-size: 0;
+        line-height: 0%;
+        border-bottom: none;
+    }
+}
+
+.questions__question-header--active {
+    // font-weight: 700;
+    // color: #FFFFFF;
+    // background-color: #FC4639;
+
+    &::after {
+        content: "\2212" !important;
+    }
+}
+
+.questions__question-content--active {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #003555;
+    padding: 15px 10px 15px 0;
+    height: 100%;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+// question
+
+// reviews
+.reviews {
+    padding: 100px 0;
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__title {
+        text-align: center !important;
+        margin-bottom: 70px;
+    }
+
+    &__swiper {
+        width: 100%;
+        max-width: 1360px;
+        padding: 5px;
+    }
+
+    &__slide {
+        background: #F4F4F4;
+        box-shadow: 2px 2px 4px rgba(69, 69, 69, 0.3);
+        border-radius: 5px;
+        padding: 0 50px;
+        min-height: 280px;
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 25px;
+        }
+
+        p {
+            font-size: 25px;
+            line-height: 130%;
+            margin-bottom: 10px;
+        }
+
+        span {
+            font-size: 18px;
+            line-height: 120%;
+        }
+    }
+
+    &__arrow {
+        background: #f2f2f2;
+        box-shadow: 0px 2px 4px rgb(167 167 167 / 40%);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 100000;
+    }
+
+    &__prev {
+        left: 0;
+
+        img {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__next {
+        right: 0;
+    }
+}
+
+// reviews
+
+// contacts
+.contacts {
+    padding: 80px 0 150px;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 70px;
+    }
+}
+
+// contacts
+
+// footer
+.footer {
+    padding: 22px 0;
+    display: flex;
+    justify-content: center;
+}
+
+// footer
+
+// modal-thanks
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2px 2px rgba(0, 56, 84, 0.2);
+    border-radius: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100000;
+    width: 100%;
+    max-width: 1045px;
+
+    &__wrapper {
+        padding: 55px 0 55px 125px;
+        position: relative;
+
+        &--form {
+            width: 100%;
+            max-width: 385px;
+            text-align: center;
+
+            h4 {
+                font-size: 30px;
+                line-height: 120%;
+                max-width: 300px;
+                margin: 0 auto 10px;
+            }
+
+            p {
+                margin-bottom: 30px;
+                font-size: 18px;
+                line-height: 120%;
+            }
+
+            form {
+                width: 100%;
+                margin-bottom: 10px;
+
+                button {
+                    max-width: 100% !important;
+                }
+            }
+
+            span {
+                font-size: 12px;
+                line-height: 120%;
+            }
+        }
+
+        .closed {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background-color: transparent;
+            padding: 0;
+        }
+
+        &--people {
+            position: absolute;
+            right: 50px;
+            bottom: 0;
+        }
+    }
+}
+
+.modal-active {
+    display: block !important;
+}
+
+.thanks {
+    // display: none;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 200000;
+    width: 100%;
+    max-width: 1045px;
+
+    &__wrapper {
+        min-height: 500px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        p {
+            font-size: 30px;
+            line-height: 120%;
+            margin-top: 30px;
+        }
+
+        &--closed {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background-color: transparent;
+            padding: 0;
+        }
+    }
 }

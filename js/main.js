@@ -26,3 +26,38 @@ const swiper = new Swiper('.services__swiper', {
     },
     spaceBetween: 10,
 });
+
+// Accordion
+const questions = document.querySelectorAll('.questions__question-header');
+
+
+questions.forEach(question => {
+    question.addEventListener('click', () => {
+        question.nextSibling.nextSibling.classList.toggle('questions__question-content--active');
+        question.classList.toggle('questions__question-header--active');
+    });
+});
+
+const swiperTwo = new Swiper('.reviews__swiper', {
+    loop: true,
+
+    navigation: {
+        nextEl: '.reviews__next',
+        prevEl: '.reviews__prev',
+    },
+    spaceBetween: 10,
+});
+
+let btnModal = document.querySelectorAll('[data-modal]'),
+    closed = document.querySelector('.closed'),
+    modal = document.querySelector('.modal');
+
+btnModal.forEach(item => {
+    item.addEventListener('click', () => {
+        modal.classList.add('modal-active');
+    })
+});
+
+closed.addEventListener('click', () => {
+    modal.classList.remove('modal-active');
+});

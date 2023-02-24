@@ -25,7 +25,8 @@
             <div class="nav__main">
                 <img class="nav__main--logo" src="./img/1-nav/logo.svg" alt="Логотип">
 
-                <button class="nav__main--circly"><img src="./img/1-nav/phone-circly.svg" alt="Иконка"></button>
+                <button data-modal class="nav__main--circly"><img src="./img/1-nav/phone-circly.svg"
+                        alt="Иконка"></button>
 
                 <div class="nav__main--click">
 
@@ -46,7 +47,7 @@
                         <a class="uni fw700" href="tel:+78612179345">+7 (861) 217-93-45</a>
                     </div>
 
-                    <button class="btn btn-long nav__main--click_btn uni white bg-dark fw700">Бесплатная
+                    <button data-modal class="btn btn-long nav__main--click_btn uni white bg-dark fw700">Бесплатная
                         консультация</button>
 
                     <a class="nav__main--click_circly" href="tel:+78612179345">
@@ -117,7 +118,7 @@
                     результат!</h2>
                 <p class="uni fw700 black">Оставьте заявку, и получите бесплатную консультацию</p>
 
-                <button class="btn bg-dark fw700 btn-short white">Оставить заявку</button>
+                <button data-modal class="btn bg-dark fw700 btn-short white">Оставить заявку</button>
             </div>
         </div>
         <picture class="header__img">
@@ -203,7 +204,8 @@
 
                     <div class="swiper-slide services__swiper--slide">
 
-                        <button class="services__swiper--slide_btn btn btn-short bg-dark uni white fw700">Списать
+                        <button data-modal
+                            class="services__swiper--slide_btn btn btn-short bg-dark uni white fw700">Списать
                             долги</button>
 
                         <img src="./img/5-services/1.png" alt="Картинка">
@@ -233,14 +235,15 @@
                                     с дальнейшим исправлением кредитной истории</li>
                             </ul>
 
-                            <button class="btn btn-short bg-dark uni white fw700">Списать долги</button>
+                            <button data-modal class="btn btn-short bg-dark uni white fw700">Списать долги</button>
 
                         </div>
                     </div>
 
                     <div class="swiper-slide services__swiper--slide">
 
-                        <button class="services__swiper--slide_btn btn btn-short bg-dark uni white fw700">Списать
+                        <button data-modal
+                            class="services__swiper--slide_btn btn btn-short bg-dark uni white fw700">Списать
                             долги</button>
 
                         <img src="./img/5-services/2.png" alt="Картинка">
@@ -266,14 +269,15 @@
                                 </li>
                             </ul>
 
-                            <button class="btn btn-short bg-dark uni white fw700">Списать долги</button>
+                            <button data-modal class="btn btn-short bg-dark uni white fw700">Списать долги</button>
 
                         </div>
                     </div>
 
                     <div class="swiper-slide services__swiper--slide">
 
-                        <button class="services__swiper--slide_btn btn btn-short bg-dark uni white fw700">Списать
+                        <button data-modal
+                            class="services__swiper--slide_btn btn btn-short bg-dark uni white fw700">Списать
                             долги</button>
 
                         <img src="./img/5-services/3.png" alt="Картинка">
@@ -299,7 +303,7 @@
                                 </li>
                             </ul>
 
-                            <button class="btn btn-short bg-dark uni white fw700">Списать долги</button>
+                            <button data-modal class="btn btn-short bg-dark uni white fw700">Списать долги</button>
 
                         </div>
                     </div>
@@ -317,6 +321,60 @@
         </div>
     </section>
 
+    <section class="information bg-blue">
+        <div class="container">
+            <div>
+                <h3 class="title information__title">О нас</h3>
+                <p class="uni fw700 white">Юридическая компания «Правовой статус» работает с 2020-го года. Всего за два
+                    года мы помогли около
+                    5000 гражданам.
+                    Основным направлением является помощь в освобождении от долгов людям, оказавшимся в сложной ситуации
+                    через процедуру банкротства в рамках ФЗ 127, А ТАКЖЕ ОКАЗАНИЕ УСЛУГ ПРЕДПРИЯТИЯМ И ОРГАНИЗАЦИЯМ.
+                    МИССИЯ НАШЕЙ КОМПАНИИ - КАЧЕСТВЕННЫЕ И ЧЕСТНЫЕ УСЛУГИ С ЗАБОТОЙ О КЛИЕНТЕ! В каждом договоре мы
+                    прописываем гарантию списания долга.</p>
+            </div>
+
+            <img class="information__logo" src="./img/6-information/p.png" alt="Логотип">
+            <img class="information__man" src="./img/6-information/man.png" alt="Сотрудник">
+
+        </div>
+    </section>
+
+    <section class="questions">
+        <div class="container">
+            <h3 class="title questions__title">часто задаваемые Вопросы</h3>
+
+            <div class="questions__accordion">
+                <div class="questions__question">
+                    <div class="questions__question-header questions__question-header--active">Что будет с квартирой и
+                        другим имуществом?</div>
+                    <div class="questions__question-content questions__question-content--active">Ваша собственность
+                        останется у вас. Важно очень грамотно описать свою ситуацию специалистам и подобрать выгодное
+                        решение по делу</div>
+                </div>
+                <div class="questions__question">
+                    <div class="questions__question-header">Я останусь без работы, если начну списывать долги?
+                    </div>
+                    <div class="questions__question-content">Ваша собственность останется у вас. Важно очень грамотно
+                        описать свою ситуацию специалистам и подобрать выгодное решение по делу
+                    </div>
+                </div>
+                <div class="questions__question">
+                    <div class="questions__question-header">У меня нет официального трудоустройства. Как списать долги?
+                    </div>
+                    <div class="questions__question-content">Ваша собственность останется у вас. Важно очень грамотно
+                        описать свою ситуацию специалистам и подобрать выгодное решение по делу</div>
+                </div>
+                <div class="questions__question">
+                    <div class="questions__question-header">У вас есть гарантии?</div>
+                    <div class="questions__question-content">Ваша собственность останется у вас. Важно очень грамотно
+                        описать свою ситуацию специалистам и подобрать выгодное решение по делу</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <section class="description bg-blue">
         <div class="container">
             <p class="uni white fw700">При оформлении полного списания долгов и кредитов наши специалисты берут на себя
@@ -324,6 +382,149 @@
                 Все условия прозрачны и подробно прописываются в договоре. Юридически все бумаги защищены</p>
         </div>
     </section>
+
+    <section class="reviews">
+        <div class="container">
+            <h3 class="title reviews__title">ОТзывы</h3>
+
+            <div class="reviews__wrapper">
+                <div class="swiper reviews__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide reviews__slide">
+                            <img src="./img/7-reviews/1.png" alt="Человек">
+
+                            <div>
+                                <p class="uni fw700 blue">Пётр Козначенко:</p>
+                                <span class="inter fw400 dark">На прошлой неделе в этой компании завершили процедуру
+                                    моего банкротства, всё прошло успешно и хорошо. Компанию правовой статус мне
+                                    посоветовал мой коллега, котрого как раз вы консультировали по его вопросу.
+                                    До этого я всё никак не мог решится на банкротство, уже совсем просто руки
+                                    опустились. Я конечно, много чего узнал про эту процедуру, что всё не так уж
+                                    страшно, но всё равно остерегался, что накрутятся какие-нибудь дополнительные
+                                    платежи или затянется всё надолго. Но по факту сумма такая, как мне озвучили сразу,
+                                    с приставами вопрос тоже помогли решить. Спасибо большое от меня Отдельно
+                                    Александру!</span>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide reviews__slide">
+                            <img src="./img/7-reviews/2.png" alt="Человек">
+
+                            <div>
+                                <p class="uni fw700 blue">​Роман Плитков:</p>
+                                <span class="inter fw400 dark">​Вы просто молодцы! действительно выполняете все
+                                    обязательства! Никита - отличный сотрудник - очень помог.
+                                    От таких бед меня избавил! Спасибо большое по-братски!</span>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide reviews__slide">
+                            <img src="./img/7-reviews/3.png" alt="Человек">
+
+                            <div>
+                                <p class="uni fw700 blue">Михаил Михальчук:</p>
+                                <span class="inter fw400 dark">Столкнулся со сложностями по долговым обязательствам...
+                                    Не знал уже, куда податься, даже родственники отказывали... Решил обратиться в
+                                    компанию Правовой статус. И как хорошо, нашлись люди, которые мне помогли! Списали
+                                    уйму долго! И все это бессудебное банкротство! Отдельное спасибо Никите
+                                    Геннадиевичу!</span>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide reviews__slide">
+                            <img src="./img/7-reviews/4.png" alt="Человек">
+
+                            <div>
+                                <p class="uni fw700 blue">Денис Гордеев:</p>
+                                <span class="inter fw400 dark">Здравствуйте! Желаю выразить Вам искреннюю благодарность
+                                    за квалифицированное оказание юридических услуг, за добросовестное отношение к
+                                    выполнению работы и за время, уделенное решению моей проблемы. Спасибо вам за
+                                    профессионализм, организованность, настойчивость и знание дела, которые вы проявили
+                                    для достижения успешного результата. Я уверен, что Ваши труды приносят пользу многим
+                                    людям. Успехов Вам и процветания. Также отдельное спасибо Александру!</span>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide reviews__slide">
+                            <img src="./img/7-reviews/5.png" alt="Человек">
+
+                            <div>
+                                <p class="uni fw700 blue">Павел Долгоруков:</p>
+                                <span class="inter fw400 dark">Думал, что я никогда не отвяжусь от навязчивых звонков и
+                                    приходов коллекторов.
+                                    Но все же смог, благодаря процедуре банкротства, которую помогла мне оформить эта
+                                    компания.
+                                    Юрист помог грамотно оформить все документы, и уже в ходе рассмотрения заявления от
+                                    меня отстали коллекторы. Спасибо вам большое, Правовой статус!</span>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide reviews__slide">
+                            <img src="./img/7-reviews/6.png" alt="Человек">
+
+                            <div>
+                                <p class="uni fw700 blue">​Роза Некурова:</p>
+                                <span class="inter fw400 dark">Хочу выразить благодарность сотрудникам компании Правовой
+                                    статус!!! Спасибо за решение моей проблемы, которая мешала и тормозила мою жизнь на
+                                    протяжение 4х лет! Юристы были на связи, помогли с оформлением документов и списали
+                                    все долги за вполне адекватные деньги!!! Большое спасибо! Вы молодцы!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__arrow reviews__prev">
+                    <img src="./img/7-reviews/arrow.svg" alt="">
+                </div>
+                <div class="reviews__arrow reviews__next">
+                    <img src="./img/7-reviews/arrow.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <h2 class="title contacts__title">наши контакты</h2>
+            <div class="contacts__main"></div>
+        </div>
+    </section>
+
+    <footer class="footer bg-blue">
+        <img src="./img/9-footer/logo-footer.svg" alt="Логотип">
+    </footer>
+
+    <!-- modal-thsnks -->
+    <div class="modal card">
+        <div class="modal__wrapper">
+            <div class="modal__wrapper--form">
+                <h4 class="inter fw700 blue">Оставьте заявку прямо сейчас!</h4>
+                <p class="inter fw400 dark">Мы вам перезвоним в ближайшее время</p>
+
+                <form action="">
+                    <input class="input" placeholder="Ваше имя" type="text">
+                    <input class="input" placeholder="Телефон" type="text">
+                    <button class="btn bg-dark fw700 btn-long white">Отправить</button>
+                </form>
+
+                <span class="inter fw400 dark">*Нажимая кнопку “Отправить”, я соглашаюсь с Политикой
+                    конфиденциальности</span>
+            </div>
+            <button class="closed"><img src="./img/10-modal/closed.svg" alt="Закрыть"></button>
+
+            <img class="modal__wrapper--people" src="./img/10-modal/form.png" alt="Человек">
+        </div>
+    </div>
+
+    <!-- thanks -->
+
+    <div style="display:none;" class="card thanks">
+        <div class="thanks__wrapper">
+            <button class="thanks__wrapper--closed"><img src="./img/10-modal/closed.svg" alt="Закрыть"></button>
+
+            <img src="./img/10-modal/thanks.svg" alt="Логотип">
+            <p class="inter fw700 dark">Ваша заявка отправлена!</p>
+        </div>
+    </div>
 
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
