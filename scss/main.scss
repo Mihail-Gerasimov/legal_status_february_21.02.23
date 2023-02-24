@@ -708,3 +708,120 @@ button {
 }
 
 // application
+
+.services {
+    padding: 100px 0;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 67px;
+    }
+
+    &__swiper--slide {
+        background: #F4F4F4;
+        box-shadow: 2px 2px 4px rgba(69, 69, 69, 0.3);
+        border-radius: 5px;
+        min-height: 720px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_btn {
+            display: none;
+        }
+
+        div {
+            max-width: 825px;
+            margin-left: 72px;
+        }
+
+        &_title {
+            font-size: 30px;
+            line-height: 120%;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+
+            br {
+                display: none;
+            }
+        }
+
+        &_subtitle {
+            font-size: 25px;
+            line-height: 130%;
+            margin-bottom: 35px;
+            display: block;
+        }
+
+        &_stages {
+            font-size: 25px;
+            line-height: 130%;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        &_list {
+            margin-bottom: 40px;
+
+            li {
+                font-size: 18px;
+                line-height: 120%;
+                margin-bottom: 20px;
+                padding-left: 35px;
+                position: relative;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    display: block;
+                    width: 20px;
+                    height: 17px;
+                    background-image: url(../img/5-services/paragraph.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}
+
+.services__swiper {
+    padding: 5px;
+}
+
+.swiper__arrow {
+    background: #F2F2F2;
+    box-shadow: 0px 2px 4px rgba(167, 167, 167, 0.4);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 52%;
+    z-index: 100000;
+}
+
+.swiper__prev {
+    left: -80px;
+
+    img {
+        transform: rotate(180deg);
+    }
+}
+
+.swiper__next {
+    right: -80px;
+}
+
+.services .container {
+    position: relative;
+}

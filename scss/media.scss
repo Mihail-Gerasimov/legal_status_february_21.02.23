@@ -6,6 +6,21 @@
     }
 }
 
+@media (max-width: 1700px) {
+    .services__swiper {
+        width: 100%;
+        max-width: 1380px;
+    }
+
+    .swiper__next {
+        right: 3px;
+    }
+
+    .swiper__prev {
+        left: 3px;
+    }
+}
+
 @media (max-width: 1520px) {
     .application {
         padding-top: 40px;
@@ -27,6 +42,23 @@
     .application__argument div {
         max-width: 390px;
         font-size: 18px;
+    }
+
+    .services__swiper {
+        max-width: 1290px;
+    }
+
+    .services__swiper--slide div {
+        max-width: 780px;
+        margin-left: 32px;
+    }
+
+    .swiper__next {
+        right: 5px;
+    }
+
+    .swiper__prev {
+        left: 5px;
     }
 }
 
@@ -67,6 +99,42 @@
     .application__argument {
         top: 26px;
     }
+
+    .services__swiper--slide {
+        min-height: 630px;
+    }
+
+    .services__swiper--slide div {
+        max-width: 630px;
+    }
+
+    .services__swiper--slide img {
+        max-width: 340px;
+    }
+
+    .services__swiper {
+        max-width: 1055px;
+    }
+
+    .services__swiper--slide_title {
+        font-size: 21px;
+    }
+
+    .services__swiper--slide_subtitle {
+        font-size: 21px;
+        margin-bottom: 25px;
+    }
+
+    .services__swiper--slide_stages {
+        font-size: 19px;
+        margin-bottom: 25px;
+    }
+
+    .services__swiper--slide_list li {
+        font-size: 16px;
+        padding-left: 30px;
+    }
+
 }
 
 @media (max-width: 1200px) {
@@ -119,6 +187,19 @@
         max-width: 316px;
         font-size: 14px;
         padding: 8px 35px 8px 20px;
+    }
+
+    .swiper__arrow {
+        top: auto;
+        bottom: -75px;
+    }
+
+    .services {
+        padding: 100px 0 140px;
+    }
+
+    .services__swiper--slide div {
+        max-width: 560px;
     }
 }
 
@@ -256,6 +337,92 @@
             margin: 0 0 10px;
         }
     }
+
+    .services__swiper--slide div button {
+        display: none;
+    }
+
+    .services__swiper--slide_title {
+        text-align: center;
+
+        br {
+            display: block;
+        }
+    }
+
+    .services__swiper--slide_subtitle {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .services__swiper--slide_stages {
+        text-align: center;
+    }
+
+    .services__swiper--slide_list {
+        margin-bottom: 25px;
+    }
+
+    .services {
+        padding: 60px 0 100px;
+    }
+
+    .swiper__next {
+        right: 15px;
+    }
+
+    .swiper__prev {
+        left: 15px;
+    }
+
+    .services__swiper--slide {
+        flex-direction: column-reverse;
+        padding: 35px 0;
+    }
+
+    .swiper__arrow {
+        bottom: -30px;
+    }
+
+    .services__swiper--slide img {
+        max-width: 200px;
+    }
+
+    .services__swiper--slide_list li {
+        font-size: 13px;
+        padding-left: 29px;
+        margin-bottom: 15px;
+    }
+
+    .services__swiper--slide div {
+        margin: 0;
+    }
+
+    .services__swiper--slide_btn {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .services__swiper {
+        max-width: 600px;
+    }
+
+    .swiper__arrow {
+        width: 44px;
+        height: 44px;
+        bottom: -50px;
+    }
+
+    .swiper__next {
+        right: 50%;
+        transform: translateX(170%);
+    }
+
+    .swiper__prev {
+        left: 50%;
+        transform: translateX(-170%);
+    }
 }
 
 @media (max-width: 767px) {
@@ -287,6 +454,19 @@
     .care__main--card:last-child {
         margin-top: 0;
         margin-bottom: 0;
+    }
+
+    .services__swiper--slide div {
+        max-width: 500px;
+    }
+
+    .services__swiper--slide_list li {
+        font-size: 12px;
+    }
+
+    .services__title {
+        text-align: center;
+        margin-bottom: 30px;
     }
 }
 
@@ -375,5 +555,21 @@
     .application__main--form {
         padding: 38px 15px;
         max-width: 308px;
+    }
+
+    .services .container {
+        padding: 0 2px;
+    }
+
+    .services__swiper--slide {
+        padding: 35px 15px;
+    }
+
+    .services__swiper {
+        max-width: 310px;
+    }
+
+    .services__swiper--slide {
+        height: auto;
     }
 }

@@ -16,3 +16,13 @@ window.onscroll = function () {
     }
     prevScrollpos = currentScrollPos;
 };
+
+const swiper = new Swiper('.services__swiper', {
+    loop: true,
+
+    navigation: {
+        nextEl: '.swiper__next',
+        prevEl: '.swiper__prev',
+    },
+    spaceBetween: 10,
+});
