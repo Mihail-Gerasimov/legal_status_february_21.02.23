@@ -61,11 +61,11 @@
         <div class="nav__link bg-blue">
             <div class="container">
                 <ul>
-                    <li><a class="white uni fw700" href="">Главная</a></li>
-                    <li><a class="white uni fw700" href="">Услуги</a></li>
-                    <li><a class="white uni fw700" href="">Вопросы</a></li>
-                    <li><a class="white uni fw700" href="">О нас</a></li>
-                    <li><a class="white uni fw700" href="">Контакты</a></li>
+                    <li><a class="white uni fw700" href="#care">Главная</a></li>
+                    <li><a class="white uni fw700" href="#services">Услуги</a></li>
+                    <li><a class="white uni fw700" href="#services">Вопросы</a></li>
+                    <li><a class="white uni fw700" href="#information">О нас</a></li>
+                    <li><a class="white uni fw700" href="#contacts">Контакты</a></li>
                 </ul>
                 <div class="nav__link--mobile">
                     <img src="./img/1-nav/phone-mob.svg" alt="">
@@ -82,11 +82,11 @@
         <div class="nav__menu bg-blue">
             <div class="nav__menu--wrapper">
                 <ul>
-                    <li><a class="uni fw700 white" href="#">Главная</a></li>
-                    <li><a class="uni fw700 white" href="#">Услуги</a></li>
-                    <li><a class="uni fw700 white" href="#">Вопросы</a></li>
-                    <li><a class="uni fw700 white" href="#">О нас</a></li>
-                    <li><a class="uni fw700 white" href="#">Контакты</a></li>
+                    <li><a class="white uni fw700" href="#care">Главная</a></li>
+                    <li><a class="white uni fw700" href="#services">Услуги</a></li>
+                    <li><a class="white uni fw700" href="#services">Вопросы</a></li>
+                    <li><a class="white uni fw700" href="#information">О нас</a></li>
+                    <li><a class="white uni fw700" href="#contacts">Контакты</a></li>
                 </ul>
 
                 <div class="nav__menu--wrapper-icon">
@@ -137,7 +137,7 @@
         </div>
     </section>
 
-    <section class="care">
+    <section id="care" class="care">
         <div class="container">
             <h3 class="title care__title">Мы берем на себя заботу о:</h3>
             <div class="care__main">
@@ -195,7 +195,7 @@
         </div>
     </section>
 
-    <section class="services">
+    <section id="services" class="services">
         <div class="container">
             <h3 class="title services__title">наши услуги</h3>
 
@@ -321,7 +321,7 @@
         </div>
     </section>
 
-    <section class="information bg-blue">
+    <section id="information" class="information bg-blue">
         <div class="container">
             <div>
                 <h3 class="title information__title">О нас</h3>
@@ -340,7 +340,7 @@
         </div>
     </section>
 
-    <section class="questions">
+    <section id="services" class="questions">
         <div class="container">
             <h3 class="title questions__title">часто задаваемые Вопросы</h3>
 
@@ -482,10 +482,47 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section id="contacts" class="contacts">
         <div class="container">
             <h2 class="title contacts__title">наши контакты</h2>
-            <div class="contacts__main"></div>
+            <div class="contacts__main">
+                <ul>
+                    <li><img src="./img/8-contacts/number.svg" alt="Иконка">
+                        <a href="tel:+79869338462">+79869338462</a>
+                    </li>
+                    <li><img src="./img/8-contacts/geo.svg" alt="Иконка">
+                        <a target="_blank"
+                            href="https://yandex.ru/maps/35/krasnodar/house/oktyabrskaya_ulitsa_68_35/Z0EYfwFmSEEGQFpvfXxzdXplYw==/?ll=38.966141%2C45.024667&z=17.46">г.
+                            Краснодар, ул. Октябрьская 68/35</a>
+                    </li>
+                    <li><img src="./img/8-contacts/mail.svg" alt="Иконка">
+                        <a href="mailto:leglastatuskrd23@gmail.com">leglastatuskrd23@gmail.com
+                        </a>
+                    </li>
+                    <li><img src="./img/8-contacts/telegram.svg" alt="Иконка">
+                        <a target="_blank" href="https://t.me/legal_status23">t.me/legal_status23
+                        </a>
+                    </li>
+                    <li><img src="./img/8-contacts/vk.svg" alt="Иконка">
+                        <a target="_blank" href="https://vk.com/legal.status23">vk.com/legal.status23
+                        </a>
+                    </li>
+                    <li><img src="./img/8-contacts/youtube.svg" alt="Иконка">
+                        <a target="_blank"
+                            href="https://www.youtube.com/@legal.status23">youtube.com/@legal.status23</a>
+                    </li>
+                    <li class="uni dark fw700"><img src="./img/8-contacts/enn.svg" alt="Иконка">
+                        ИНН
+                        2308282792
+                    </li>
+                </ul>
+
+                <div class="contacts__main--map">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3Aac3fc4559139878a9fbd63b7a7d4eaabc4e683e16dc2d653938dbd39f9cd23dc&amp;source=constructor"
+                        width="880" height="570" frameborder="0"></iframe>
+                </div>
+            </div>
         </div>
     </section>
 
