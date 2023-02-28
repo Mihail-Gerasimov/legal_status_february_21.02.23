@@ -809,6 +809,7 @@ button {
     position: absolute;
     top: 52%;
     z-index: 100000;
+    cursor: pointer;
 }
 
 .swiper__prev {
@@ -918,6 +919,7 @@ button {
             display: flex;
             align-items: center;
             justify-content: center;
+            cursor: pointer;
         }
     }
 
@@ -1011,6 +1013,7 @@ button {
         top: 50%;
         transform: translateY(-50%);
         z-index: 100000;
+        cursor: pointer;
     }
 
     &__prev {
